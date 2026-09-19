@@ -1,6 +1,6 @@
 {
     "name": "mjohann/theme2cover",
-    "description": "Generate cover images from simple text themes and topics.",
+    "description": "Theme2Cover is a PHP library that generates 1920x1080 cover images from a simple text theme. It automatically creates a visual composition with random colors, geometric elements, decorative details, and typography, returning the generated image as a Base64-encoded JPEG.",
     "type": "library",
     "license": "MIT",
     "authors": [
