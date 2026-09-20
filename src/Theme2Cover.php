@@ -666,11 +666,11 @@ class Theme2Cover
                 */
 
                 $font->wrap(
-                    1100
+                    1000
                 );
 
                 $font->lineHeight(
-                    1.08
+                    1.6
                 );
             }
         );

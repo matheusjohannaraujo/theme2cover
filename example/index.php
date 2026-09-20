@@ -120,8 +120,7 @@ $image = \MJohann\Packlib\Theme2Cover::create($name);
         function generate() {
 
             const params = new URLSearchParams({
-                name: <?= json_encode($name) ?>,
-                random: Math.random()
+                name: <?= json_encode($name) ?>
             });
 
             location.href = `?${params}`;
@@ -132,7 +131,7 @@ $image = \MJohann\Packlib\Theme2Cover::create($name);
 
             clearInterval(timer);
 
-            seconds = 5;
+            seconds = 3;
 
             counter.textContent = `${seconds}s`;
 
