@@ -666,7 +666,7 @@ class Theme2Cover
                 */
 
                 $font->wrap(
-                    1050
+                    1000
                 );
 
                 $font->lineHeight(
