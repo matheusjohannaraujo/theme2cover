@@ -62,7 +62,7 @@ The library automatically adjusts the font size according to the length of the t
 * Up to 70 characters — `70px`
 * More than 70 characters — `62px`
 
-The text also supports automatic wrapping with a maximum width of `1100px`.
+The text also supports automatic wrapping with a maximum width of `1000px`.
 
 ### 🔷 Decorative Elements
 
@@ -96,20 +96,6 @@ The main API is the static `Theme2Cover::create()` method.
 
 It receives the theme as a string and returns the generated cover as a Base64-encoded JPEG.
 
-```php
-<?php
-
-use MJohann\Packlib\Theme2Cover;
-
-require_once "vendor/autoload.php";
-
-$cover = Theme2Cover::create(
-    "Artificial Intelligence"
-);
-
-echo $cover;
-```
-
 ### 🌐 Display the Generated Cover in HTML
 
 Because the method returns a complete Base64 data URI, the result can be used directly as the `src` attribute of an HTML image.
@@ -122,7 +108,7 @@ use MJohann\Packlib\Theme2Cover;
 require_once "vendor/autoload.php";
 
 $cover = Theme2Cover::create(
-    "Artificial Intelligence"
+    "PHP Development"
 );
 
 ?>
@@ -202,7 +188,7 @@ Every generated cover follows the same base specifications:
 | Quality             | `92`            |
 | Output              | Base64 Data URI |
 | Font                | Montserrat Bold |
-| Maximum title width | `1100px`        |
+| Maximum title width | `1000px`        |
 
 The resulting image uses a `16:9` aspect ratio, making it suitable for presentations, articles, videos, thumbnails, social media content, and other visual applications.
 
